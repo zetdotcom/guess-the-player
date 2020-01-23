@@ -1,8 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import logo from './logo.svg';
 import './App.css';
-import { fetchPlayers, requestPlayers } from './features/players/playersSlice';
+import { fetchPlayers } from './features/players/playersSlice';
 import PlayersContainer from './features/players/PlayersContainer';
 
 function App() {
