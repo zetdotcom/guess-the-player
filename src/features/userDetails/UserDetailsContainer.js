@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
+import {WINNING_SCORE} from '../../constants';
 
 function UserDetailsContainer() {
 
@@ -9,7 +10,7 @@ function UserDetailsContainer() {
   return (
     <div>
       {
-        userScore >= 10 ? (
+        userScore >= WINNING_SCORE ? (
           <div>WINNER </div>
         ) : (
             <div>Score: {userScore}</div>
