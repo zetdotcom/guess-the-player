@@ -25,7 +25,6 @@ const {actions, reducer} = playersSlice;
 export function fetchPlayers() {
   return function(dispatch) {
     dispatch(requestPlayers());
-    // console.log(getPlayers())
     return getPlayers().then(data => dispatch(receivePlayers(data)));
   }
 }

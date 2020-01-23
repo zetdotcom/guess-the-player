@@ -12,19 +12,17 @@ const StyledCard = styled.div`
 
 function PlayerCard({ player, showFppg, onClick, maxFppg }) {
 
-  const playerName = `${player.first_name} ${player.last_name}`
-  // console.log('card', maxFppg())
-  // const maxPoints = maxFppg();
-  const hasHighestFppg = player.fppg === maxFppg()
-  console.log("TCL: PlayerCard -> hasHighestFppg", hasHighestFppg)
+  const playerName = `${player.first_name} ${player.last_name}`;
+  const hasHighestFppg = player.fppg === maxFppg();
+  const playerFppg = player.fppg?.toFixed(2) || 0; 
 
   return (
-    <StyledCard onClick={() => onClick(hasHighestFppg)} style={{border: hasHighestFppg && showFppg && '5px solid green'}}>
+    <StyledCard onClick={() => onClick(hasHighestFppg)} style={{border: hasHighestFppg && showFppg && '15px solid green'}}>
       <div>
         {playerName}
       </div>
       <img src={player.images.default.url} alt={playerName} width={200} />
-      <div>FPPG: {showFppg ? player.fppg.toFixed(2) : '??'}</div>
+      <div>FPPG: {showFppg ? playerFppg : '??'}</div>
     </StyledCard>
   )
 };

@@ -3,7 +3,8 @@ import { useDispatch } from 'react-redux';
 import './App.css';
 import { fetchPlayers } from './features/players/playersSlice';
 import PlayersContainer from './features/players/PlayersContainer';
-
+import UserDetailsContainer from './features/userDetails/UserDetailsContainer';
+import {GlobalStyle} from './style'
 function App() {
 
   const dispatch = useDispatch();
@@ -14,8 +15,10 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
+    <div >
+      <GlobalStyle />
       <PlayersContainer />
+      <UserDetailsContainer />
     </div>
   );
 }
