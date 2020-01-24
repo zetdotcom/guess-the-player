@@ -10,10 +10,10 @@ const StyledCard = styled.div`
   border: ${props => props.player && (props.player.fppg === props.maxFppg()) && props.showFppg && '5px solid green'};
 `;
 
-function PlayerCard({ player, showFppg, onClick, maxFppg }) {
+function PlayerCard({ player, showFppg, onClick, maxFppgId }) {
 
   const playerName = `${player.first_name} ${player.last_name}`;
-  const hasHighestFppg = player.fppg === maxFppg();
+  const hasHighestFppg = player.id === maxFppgId();
   const playerFppg = player.fppg?.toFixed(2) || 0; 
 
   return (
