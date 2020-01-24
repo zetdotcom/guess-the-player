@@ -5,23 +5,23 @@ import { setWinner } from '../scoreboard/scoreboardSlice';
 
 function ScoreboardDetailsContainer() {
 	const dispatch = useDispatch();
-	const { score, attempts } = useSelector((state) => state.scoreboard);
+	const { score, attempts } = useSelector(state => state.scoreboard);
 
 	useEffect(
 		() => {
 			score >= WINNING_SCORE && dispatch(setWinner());
 		},
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-		[ score ]
+		[score]
 	);
 
 	return (
 		<div>
-			<div>
+			<div data-testid='score'>
 				Score: {score} / {WINNING_SCORE}
 			</div>
-			<div>Attempts: {attempts}</div>
-			<div>Accuracy: {attempts > 0 && (score / attempts * 100).toFixed() + '%'}</div>
+			<div data-testid='attempts'>Attempts: {attempts}</div>
+			<div data-testid='accuracy'>Accuracy: {attempts > 0 && ((score / attempts) * 100).toFixed() + '%'}</div>
 		</div>
 	);
 }

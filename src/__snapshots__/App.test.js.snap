@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TEST APP rendering renders App initial screen 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AykKK emFRFx"
+  >
+    <h2>
+      Guess which player has higher FanDuel Points Per Game (FPPG)
+    </h2>
+    <div>
+      <div>
+        <div>
+          Select how many players to show:
+        </div>
+        <div
+          class="sc-AykKG bKYsWi"
+        >
+          <label
+            class="sc-AykKI chHbPs"
+          >
+            <input
+              checked=""
+              class="sc-AykKH dzTRW"
+              name="players-number"
+              type="radio"
+              value="2"
+            />
+            2
+          </label>
+          <label
+            class="sc-AykKI chHbPs"
+          >
+            <input
+              class="sc-AykKH dzTRW"
+              name="players-number"
+              type="radio"
+              value="3"
+            />
+            3
+          </label>
+          <label
+            class="sc-AykKI chHbPs"
+          >
+            <input
+              class="sc-AykKH dzTRW"
+              name="players-number"
+              type="radio"
+              value="5"
+            />
+            5
+          </label>
+        </div>
+        <div
+          style="min-height: 25px; font-weight: lighter; padding: 5px; font-size: 18px;"
+        />
+        <ul
+          class="sc-AykKJ gwAcfI"
+        />
+        <h4
+          style="color: red; min-height: 25px;"
+        />
+        <button
+          class="sc-AykKF kYUlLK"
+        >
+          NEXT
+        </button>
+      </div>
+    </div>
+    <div>
+      <div
+        data-testid="score"
+      >
+        Score: 0 / 10
+      </div>
+      <div
+        data-testid="attempts"
+      >
+        Attempts: 0
+      </div>
+      <div
+        data-testid="accuracy"
+      >
+        Accuracy: 
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TEST APP rendering should render App for winner screen 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AykKK emFRFx"
+  >
+    <div>
+      YOU WON
+    </div>
+    <div>
+      <div
+        data-testid="score"
+      >
+        Score: 10 / 10
+      </div>
+      <div
+        data-testid="attempts"
+      >
+        Attempts: 10
+      </div>
+      <div
+        data-testid="accuracy"
+      >
+        Accuracy: 100%
+      </div>
+    </div>
+    <button
+      class="sc-AykKF kYUlLK"
+    >
+       Play AGAIN 
+    </button>
+  </div>
+</DocumentFragment>
+`;
