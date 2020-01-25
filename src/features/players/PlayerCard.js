@@ -6,13 +6,10 @@ const StyledCard = styled.div`
 	border-radius: 5px;
 	box-shadow: 2px 2px 4px skyblue;
 	padding-top: 10px;
-	/* background: grey; */
 	cursor: pointer;
 	background: ${props => (props.showTheBest && greenBg) || (!props.showTheBest && props.chosen && redBg) || cardBg};
 	transform: ${props => props.chosen && 'scale(1.07)'};
-	/* width: 220px; */
 	overflow: hidden;
-	/* max-height: 293px; */
 `;
 
 const StyledImg = styled.img`
@@ -41,6 +38,7 @@ function PlayerCard({ player, showFppg, handleCardClick, maxFppgId }) {
 
 	return (
 		<StyledCard
+			data-testid='player-card'
 			chosen={chosen}
 			showTheBest={hasHighestFppg && showFppg}
 			onClick={() => {
