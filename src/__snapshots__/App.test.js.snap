@@ -10,62 +10,62 @@ exports[`TEST APP rendering renders App initial screen 1`] = `
     </h2>
     <div>
       <div>
-        <div>
-          Select how many players to show:
-        </div>
-        <div
-          class="sc-AykKG bKYsWi"
-        >
-          <label
-            class="sc-AykKI chHbPs"
-          >
-            <input
-              checked=""
-              class="sc-AykKH dzTRW"
-              name="players-number"
-              type="radio"
-              value="2"
-            />
-            2
-          </label>
-          <label
-            class="sc-AykKI chHbPs"
-          >
-            <input
-              class="sc-AykKH dzTRW"
-              name="players-number"
-              type="radio"
-              value="3"
-            />
-            3
-          </label>
-          <label
-            class="sc-AykKI chHbPs"
-          >
-            <input
-              class="sc-AykKH dzTRW"
-              name="players-number"
-              type="radio"
-              value="5"
-            />
-            5
-          </label>
-        </div>
-        <div
-          style="min-height: 25px; font-weight: lighter; padding: 5px; font-size: 18px;"
-        />
-        <ul
-          class="sc-AykKJ gwAcfI"
-        />
-        <h4
-          style="color: red; min-height: 25px;"
-        />
-        <button
-          class="sc-AykKF kYUlLK"
-        >
-          NEXT
-        </button>
+        Select how many players to show:
       </div>
+      <div
+        class="sc-AykKG bKYsWi"
+      >
+        <label
+          class="sc-AykKI enKeVh"
+        >
+          <input
+            checked=""
+            class="sc-AykKH bROntT"
+            name="players-number"
+            type="radio"
+            value="2"
+          />
+          2
+        </label>
+        <label
+          class="sc-AykKI enKeVh"
+        >
+          <input
+            class="sc-AykKH bROntT"
+            name="players-number"
+            type="radio"
+            value="3"
+          />
+          3
+        </label>
+        <label
+          class="sc-AykKI enKeVh"
+          data-testid="radio3"
+        >
+          <input
+            class="sc-AykKH bROntT"
+            name="players-number"
+            type="radio"
+            value="5"
+          />
+          5
+        </label>
+      </div>
+      <div
+        style="min-height: 25px; font-weight: lighter; padding: 5px; font-size: 18px;"
+      />
+      <ul
+        class="sc-AykKJ gwAcfI"
+        data-testid="players-list"
+      />
+      <h4
+        style="color: red; min-height: 25px;"
+      />
+      <button
+        class="sc-AykKF kYUlLK"
+      >
+        NEXT
+      </button>
     </div>
     <div>
       <div

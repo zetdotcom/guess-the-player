@@ -8,8 +8,12 @@ const Radios = styled.div`
 	margin: 0 auto;
 `;
 
-const RadioInput = styled.input`margin-right: 5px;`;
-const RadioLabel = styled.label`cursor: pointer;`;
+const RadioInput = styled.input`
+	margin-right: 5px;
+`;
+const RadioLabel = styled.label`
+	cursor: pointer;
+`;
 
 function PlayersRadioSelection(props) {
 	const { numOfPlayers, setNumOfPlayers } = props;
@@ -22,7 +26,7 @@ function PlayersRadioSelection(props) {
 					name='players-number'
 					value='2'
 					checked={numOfPlayers === '2'}
-					onChange={(e) => setNumOfPlayers(e.target.value)}
+					onChange={e => setNumOfPlayers(e.target.value)}
 				/>
 				2
 			</RadioLabel>
@@ -32,17 +36,17 @@ function PlayersRadioSelection(props) {
 					name='players-number'
 					value='3'
 					checked={numOfPlayers === '3'}
-					onChange={(e) => setNumOfPlayers(e.target.value)}
+					onChange={e => setNumOfPlayers(e.target.value)}
 				/>
 				3
 			</RadioLabel>
-			<RadioLabel>
+			<RadioLabel data-testid='radio3'>
 				<RadioInput
 					type='radio'
 					name='players-number'
 					value='5'
 					checked={numOfPlayers === '5'}
-					onChange={(e) => setNumOfPlayers(e.target.value)}
+					onChange={e => setNumOfPlayers(e.target.value)}
 				/>
 				5
 			</RadioLabel>
