@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/guess-the-player/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/guess-the-player/static/js/main.69b9f568.chunk.js",
+    "main.js.map": "/guess-the-player/static/js/main.69b9f568.chunk.js.map",
+    "runtime-main.js": "/guess-the-player/static/js/runtime-main.542d994e.js",
+    "runtime-main.js.map": "/guess-the-player/static/js/runtime-main.542d994e.js.map",
+    "static/js/2.ce9b0837.chunk.js": "/guess-the-player/static/js/2.ce9b0837.chunk.js",
+    "static/js/2.ce9b0837.chunk.js.map": "/guess-the-player/static/js/2.ce9b0837.chunk.js.map",
+    "index.html": "/guess-the-player/index.html",
+    "precache-manifest.7babf827ab9e1397bf035ee4265cdf58.js": "/guess-the-player/precache-manifest.7babf827ab9e1397bf035ee4265cdf58.js",
+    "service-worker.js": "/guess-the-player/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/guess-the-player/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.ce9b0837.chunk.js.LICENSE": "/guess-the-player/static/js/2.ce9b0837.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.542d994e.js",
+    "static/js/2.ce9b0837.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.69b9f568.chunk.js"
+  ]
+}
